@@ -2,16 +2,19 @@
 
 #include<iostream>
 #include<cstdlib>
+#include<string>
 
 using namespace std;
 
 int main(){
-    string original = "I love C++";
+    char original[12] = "I love C";
     char copied[12];
 
-    original = copied;
-    cout << original << endl;
-    cout << copied;
+    for(int i=0; i<12; i++){
+        original[i]=copied[i];
+    }
+    cout << "The original is: " << original << endl;
+    cout << "The copied is: " << copied;
 
     return 0;
 }
